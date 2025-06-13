@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green; /* default online status */
+}
+
+.status.offline {
+    background-color: gray;
+}
+
+#friends {
+    padding: 20px;
+    text-align: center;
+}
+
+.friend-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.friend img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#photos {
+    padding: 20px;
+    text-align: center;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.photo-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #111;
+    color: white;
+    margin-top: 40px;
+}
